@@ -1,0 +1,41 @@
+using System;​
+
+namespace metrick​
+
+{​
+
+    class Program​
+
+    {​
+
+        static void Main(string[] args)​
+
+      {​
+
+            int[] x = new int[10];​
+
+            for (int i = 0; i < 10; i++) ​
+
+               x[i] = int.Parse(Console.ReadLine());​
+
+            ​
+
+            int max = x[0];​
+
+            double s = 0;​
+
+            for (int i = 1; i < 10; i++) ​
+
+           {​
+
+                if (x[i] > max) ​
+
+                    max = x[i];​
+
+               s += x[i];​
+
+            }​
+
+            Console.WriteLine("max  = " + max);​
+
+      } }}
